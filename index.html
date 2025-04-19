@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RECIPE GENERATOR</h1>
+        
+        <label for="ingredients-input">AVAILABLE INGREDIENTS:</label>
+        <textarea id="ingredients-input" style="height: 100px; width: 90%;" placeholder="e.g., chicken breast, broccoli, olive oil, garlic, rice..."></textarea>
+
+        <div class="dropdowns">
+            <div class="dropdown">
+                <label for="dietary-preference">DIETARY PREFERENCE:</label>
+                <select id="dietary-preference">
+                    <option>Select Diet...</option>
+                    <option>High-Protein</option>
+                    <option>Vegetarian</option>
+                    <option>Vegan</option>
+                    <option>Keto</option>
+                    <option>Paleo</option>
+                    <option>High-Carb</option>
+                    <option>Low-Carb</option>
+                    <option>Dairy-Free</option>
+                </select>
+            </div>
+
+            <div class="dropdown">
+                <label for="fitness-goal">FITNESS GOAL:</label>
+                <select id="fitness-goal">
+                    <option>Select Goal...</option>
+                    <option>Endurance</option>
+                    <option>Muscle Building</option>
+                    <option>Fat Loss</option>
+                    <option>Performance</option>
+                    <option>General Health</option>
+                </select>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>OPTIONAL</h2>
+        <div class="optional-buttons">
+            <button id="nutrition-toggle">Nutritional Information</button>
+            <button id="equipment-toggle">Required Equipment</button>
+            <button id="storage-toggle">Storage Instructions</button>
+            <button id="tips-toggle">Tips and Variations</button>
+        </div>
+
+        <hr>
+
+        <button id="generate-button">GENERATE RECIPE</button>
+        <div id="recipe-output"></div>
+    </div>
+    <script src="recipe-generator.js"></script>
+</body>
+</html>

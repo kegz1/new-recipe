@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff; /* White background for main content */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    text-align: center; /* Center all headings */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left; /* Align labels to the left */
+}
+
+/* Dropdowns Side by Side */
+.dropdowns {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space dropdowns evenly */
+    margin-bottom: 15px; /* Margin for spacing */
+}
+
+.dropdown {
+    flex: 1; /* Make dropdowns the same size */
+    margin: 0 5px; /* Space between dropdowns */
+}
+
+/* Input and Select Styles */
+input[type="text"],
+textarea,
+select {
+    width: 100%; /* Set width to 100% for dropdowns */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styles */
+button {
+    background: #fff; /* White button */
+    color: #000; /* Black text */
+    border: 1px solid #000; /* Black border */
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Center button */
+    margin: 20px auto; /* Center button */
+}
+
+/* Optional Buttons Grid */
+.optional-buttons {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space buttons evenly */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.optional-buttons button {
+    flex: 1; /* Make buttons the same size */
+    margin: 0 5px; /* Space between buttons */
+}
+
+/* Selected Button Style */
+button.selected {
+    background: #000; /* Black background when selected */
+    color: #fff; /* White text when selected */
+}
+
+/* Loading Animation Styles */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.loading-spinner {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-left-color: #333;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
